@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "progress": 25,
+    "title": "Короткое название",
+    "time": ["morning", "evening"],
+    "day": ["monday", "wednesday", "saturday"],
+    "icon": "sun",
+    "color": "green"
+  },
+  {
+    "id": 2,
+    "progress": 12,
+    "title": "Название задачи, которое может быть очень длинным",
+    "time": ["morning", "evening"],
+    "day": ["monday", "wednesday", "saturday"],
+    "icon": "sun",
+    "color": "blue"
+  },
+  {
+    "id": 3,
+    "progress": 65,
+    "title": "Короткое название",
+    "time": ["morning", "evening"],
+    "day": ["monday", "wednesday", "saturday"],
+    "icon": "sun",
+    "color": "green"
+  },
+  {
+    "id": 4,
+    "progress": 100,
+    "title": "Короткое название",
+    "time": ["morning", "evening"],
+    "day": ["monday", "wednesday", "saturday"],
+    "icon": "sun",
+    "color": "red"
+  }
+]
