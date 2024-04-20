@@ -1,21 +1,20 @@
 const express = require("express");
 const {
-  addHabit,
+  createHabit,
   getAllHabits,
   getHabit,
-  editHabit,
+  updateHabit,
   deleteHabit,
-  checkID,
-  checkBody,
 } = require("../controllers/habitController");
 
 const router = express.Router();
 
 // param - миддлвар, который позволяет получать параметры из url. Если в url нет параметра id - миддлвар будет проигнорирован
-router.param("id", checkID);
+// router.param("id", checkID);
 
 //route  позволяет не дублировать url /api/v1/habits
-router.route("/").get(getAllHabits).post(checkBody, addHabit);
-router.route("/:id").get(getHabit).patch(editHabit).delete(deleteHabit);
+// router.route("/").get(getAllHabits).post(checkBody, createHabit);
+router.route("/").get(getAllHabits).post(createHabit);
+router.route("/:id").get(getHabit).patch(updateHabit).delete(deleteHabit);
 
 module.exports = router;
