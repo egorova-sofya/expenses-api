@@ -27,6 +27,8 @@ const habitSchema = new mongoose.Schema({
   createAt: {
     type: Date,
     default: Date.now(),
+    //прячет поле из выдачи
+    // select: false,
   },
 });
 

@@ -20,7 +20,7 @@
   {
     "id": 3,
     "progress": 65,
-    "title": "Короткое название",
+    "title": "Короткое название2",
     "time": ["morning", "evening"],
     "day": ["monday", "wednesday", "saturday"],
     "icon": "sun",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "progress": 100,
-    "title": "Короткое название",
+    "title": "Короткое название3",
     "time": ["morning", "evening"],
     "day": ["monday", "wednesday", "saturday"],
     "icon": "sun",
