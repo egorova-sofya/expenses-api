@@ -6,6 +6,7 @@ const {
   updateHabit,
   deleteHabit,
   aliasTopHabits,
+  getHabitsStats,
 } = require("../controllers/habitController");
 
 const router = express.Router();
@@ -16,6 +17,8 @@ const router = express.Router();
 //route  позволяет не дублировать url /api/v1/habits
 // router.route("/").get(getAllHabits).post(checkBody, createHabit);
 router.route("/top").get(aliasTopHabits, getAllHabits);
+
+router.route("/habits-stats").get(getHabitsStats);
 
 router.route("/").get(getAllHabits).post(createHabit);
 router.route("/:id").get(getHabit).patch(updateHabit).delete(deleteHabit);
